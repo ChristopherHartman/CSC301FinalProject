@@ -8,8 +8,8 @@ CREATE TABLE users
 CREATE TABLE favorites
 ( 
 	favoritesid INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	userid CHAR(50) NOT NULL,
-	cryptidid CHAR(50) NOT NULL
+	userid INT NOT NULL,
+	name CHAR(50) NOT NULL
 );
 
 CREATE TABLE cryptids

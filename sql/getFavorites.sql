@@ -1,3 +1,3 @@
-SELECT favorite
+SELECT *
 FROM FAVORITES
-WHERE userid like :pattern;
+WHERE userid like :userid;

@@ -1,13 +1,22 @@
 <?php
-function searchBooks($term, $database) 
+function searchCryptids($term, $database) 
 {
 	$term = $term . '%';
-	$sql = file_get_contents('sql/');
-	$params = array('term' => $term);
+	$sql = file_get_contents('sql/searchCryptids.sql');
+	$params = array('name' => $term);
 	$statement = $database->prepare($sql);
 	$statement->execute($params);
-	$books = $statement->fetchAll(PDO::FETCH_ASSOC);
-	return $books;
+	$cryptids = $statement->fetchAll(PDO::FETCH_ASSOC);
+	return $cryptids;
+}
+function deleteFavorite($term, $database) 
+{
+	$sql = file_get_contents('sql/deleteFavorite.sql');
+	$params = array('favoritesid' => $term);
+	$statement = $database->prepare($sql);
+	$statement->execute($params);
+	$favorites = $statement->fetchAll(PDO::FETCH_ASSOC);
+	return $favorites;
 }
 function get($key) 
 {

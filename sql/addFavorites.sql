@@ -1,2 +1,2 @@
-INSERT INTO favorites (null, userid, cryptidid)
-VALUES(null, :userid, :cryptidid)
+INSERT INTO favorites (userid, name)
+VALUES(:userid, :name)
