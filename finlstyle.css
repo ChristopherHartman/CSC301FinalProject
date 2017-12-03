@@ -58,33 +58,14 @@ label
 	margin-left: 15em; 
 	margin-top: 3px;
 }
-.ordpan
-{
-	height: 200px;
-	background-color:BDFF5E;
-	width: 78.6%;
-	border-left: 5px solid black;
-	padding-left: 1%;
-}
-.selpan
-{
-	height: 200px;
-	width: 20%;
-	background-color:BDFF5E;
-	text-align: center;
-}
-.cont
-{
-	height: 200px;
-}
-.faq
+.form-element
 {
 	background-color: BDFF5E;
 	padding-left: 20px;
 	padding-top: 10Px;
 	padding-bottom: 10px;
 }
-.form-element
+.div 
 {
 	background-color: BDFF5E;
 	padding-left: 20px;

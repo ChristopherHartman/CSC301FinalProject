@@ -14,6 +14,7 @@
 		$user = $users[0];
 		if($user['password'] == $password)
 		{
+			$_SESSION['userClass'] = new userClass($_SESSION['userID'], $userName);
 			$_SESSION['userName'] = $userName;
 			$_SESSION['userID'] = $user['userid'];
 		}
@@ -50,7 +51,7 @@
 		</form>
 	<?php else : ?>
 		<form action="" method="POST" style="background-color: #BDFF5E">
-			<h1>You are logged in as: <?php echo $_SESSION['userName'] ?></h1>
+			<h1>You are logged in as: <?php echo $_SESSION['userClass']-> getUserName() ?></h1>
 			<label>Logout:</label>
 			<input type="submit" class="button" value="LogOut" style="display: inline;" />&nbsp;
 		</form>

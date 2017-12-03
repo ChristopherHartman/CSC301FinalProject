@@ -42,10 +42,10 @@
 </header>
 <body>
 	<div class="form-element" style="background-color: #BDFF5E">
-		<label>Search:</label>
 		<form method="GET">
+			<label>Search:</label>
 			<input type="text" name="searchkey" placeholder="Search..." />
-			<input type="submit" style="display: inline;"/>&nbsp;<br>
+			<input type="submit" value="Search" style="display: inline;"/>&nbsp;
 		</form>
 		<?php foreach($cryptids as $cryptid) : ?>
 			<h2><?php echo $cryptid['name']; ?></h2>

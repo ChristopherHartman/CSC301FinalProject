@@ -81,8 +81,8 @@
 				<textarea rows="4" cols="50" type="text" name="cryptDesc" class="textbox" /><?php echo $cryptid['description'] ?></textarea><br>
 			<?php endif; ?>
 		</div>
-		<label>Submit:</label>
 		<div class="form-element">
+			<label>Submit:</label>
 			<input type="submit" class="button" style="display: inline;"/>&nbsp;
 		</div>
 	</form>
