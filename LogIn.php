@@ -23,6 +23,7 @@
 	{
 		$_SESSION['userName'] = null;
 		$_SESSION['userID'] = null;
+		$_SESSION['userClass'] = null;
 	}
 ?>
 <head><title>A Cryptid Database</title></head>

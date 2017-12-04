@@ -50,7 +50,7 @@
 <body>
 	<div style="background-color: #BDFF5E">
 		<h1>Your Favorites:</h1>
-		<?php if(isset($_SESSION['userClass'])) : ?>
+		<?php if(isset($_SESSION['userID'])) : ?>
 			<?php foreach($joinedfavorites as $favorite) : ?>
 				<?php if($_SESSION['userID'] == $favorite['userid'] ) : ?>
 					<h2><?php echo $favorite['name']; ?></h2>
